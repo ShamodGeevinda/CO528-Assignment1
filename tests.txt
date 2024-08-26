@@ -1,0 +1,14 @@
+curl http://localhost:5000/items
+
+create
+curl -X POST -H "Content-Type: application/json" -d '{"id":1, "name":"Item1"}' http://localhost:5000/items
+
+read
+curl http://localhost:5000/items/1
+
+update
+curl -X PUT -H "Content-Type: application/json" -d '{"name":"Updated Item1"}' http://localhost:5000/items/1
+curl http://localhost:5000/items/1
+
+delete
+curl -X DELETE http://localhost:5000/items/1
